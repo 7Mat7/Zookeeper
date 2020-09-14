@@ -1,0 +1,76 @@
+.card-text p {
+  font-size: 14px;
+  color: black;
+  text-align: left;
+  position: relative;
+  z-index: 10;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+
+.card-price {
+  border-radius: 5px;
+  margin: 8px auto;
+  background-color: #F0F0F0;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  position: relative;
+  padding: 0 !important;
+}
+
+.card-price:hover {
+  transform: scale(1.03);
+}
+
+.card-price:hover .btn-danger {
+  visibility: visible !important;
+}
+
+.card-price p {
+  text-align: left;
+  color: gray;
+  width: max-content;
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+.card-price h1 {
+  font-size: 5.5rem;
+  margin-bottom: 12px;
+}
+
+.card-price h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 32px;
+  background-color: salmon;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  height: 50px;
+  padding: 15px;
+}
+
+.flex-grow {
+  flex: 1 0 auto !important;
+}
+
+.text-center {
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-danger {
+  visibility: hidden !important;
+}
+
+.icon {
+  letter-spacing: 1.5rem;
+  font-size: 2rem !important;
+}
+
+.btn.btn-light {
+  border: 1px solid #2B4162;
+}

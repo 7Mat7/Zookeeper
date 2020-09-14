@@ -1,0 +1,106 @@
+.content {
+  /*margin-bottom: 120px;*/
+}
+
+#whatweoffer > .content {
+  margin-bottom: 40px;
+}
+
+#whatweoffer {
+  margin-top: 160px;
+}
+
+.content h1 {
+  font-size: 60px;
+  margin-bottom: 24px;
+}
+
+.content h2 {
+  font-weight: bold;
+  margin-left: 16px;
+  margin-bottom: 16px;
+}
+
+#map {
+  height: 300px;
+  width: 100%;
+}
+
+#tarifs, #contact {
+  margin-top: 160px;
+}
+
+#tarifs a > h2 {
+  margin: 0;
+}
+
+#equipe h1 {
+  text-align: end;
+  margin-top: 160px;
+}
+
+#contact h1 {
+  text-align: start;
+}
+
+@media (max-width: 550px) {
+  #whatweoffer > .photos {
+    order: 2;
+  }
+
+  .content {
+    margin-bottom: 80px;
+  }
+
+  .content h1 {
+    text-align: center !important;
+  }
+
+  #whatweoffer {
+    margin-bottom: 80px;
+  }
+
+  .team {
+    margin-bottom: 40px;
+  }
+}
+
+.overlay {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+.overlay img{
+  max-width: 90%;
+  max-height: 90%;
+  width: auto;
+  height: auto;
+  transform: scale(0.95);
+  transition: transform .3s;
+}
+
+.overlay:target {
+  visibility: visible;
+  outline: none;
+  cursor: default;
+  opacity: 1;
+}
+
+.overlay:target img {
+    transform: scale(1);
+}
+
+.push-left {
+  margin-left: 126px;
+}

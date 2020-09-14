@@ -1,0 +1,223 @@
+<div class="container">
+  <nav class="navbar navbar-light navbar-expand-lg navbar-expand-md fixed-top">
+    <a class="navbar-brand" href="#"><%= image_tag "logo.jpg", alt: "alttext", class:"navbar-brand" %></a>
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+         <h2><a class="nav-link" href="#whatweoffer">Notre espace <span class="sr-only">(current)</span></a></h2>
+        </li>
+        <li class="nav-item">
+          <h2><a class="nav-link" href="#contact">Réservez</a></h2>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<div class="banner">
+    <%= image_tag "Slider2.jpg", alt: "alttext" %>
+  </div>
+
+</div>
+
+<div class="container">
+  <div class="row flex-md-row mt-5">
+    <div class="content col-md-6" id="aboutus">
+      <h1>ABOUT US</h1>
+      <p class="about">Vous avez une idée superbe, il vous manque un lieu : Zookeeper est là pour vous !!
+          Notre idée ? Mettre à votre disposition un espace agréable, pratique et central afin que vous puissiez créer votre vision. Passez du virtuel au réel avec Zookeeper.
+      </p>
+      <p><strong>emplacement + taille + avantages (modulable...)</strong></p>
+    </div>
+
+    <div class="content col-md-6">
+      <div id="map">
+        <script>
+          function initMap() {
+            const boutique = {lat: 48.867720, lng: 2.356060};
+            const map = new google.maps.Map(
+                document.getElementById('map'), {zoom: 12, center: boutique});
+            const marker = new google.maps.Marker({position: boutique, map: map});
+          }
+        </script>
+      </div>
+    </div>
+  </div>
+
+  <div class="row flex-md-row" id="whatweoffer">
+    <div class="col-md-6 photos">
+      <a href="#img-1"> <%= image_tag  "ZooKeeper (1).JPG", alt: "alttext", class:"col-md-12 col-sm-12 col-lg-6" %></a>
+        <a href="#_" class="overlay" id="img-1">
+          <%= image_tag  "ZooKeeper (1).JPG", class:"mx-auto" %>
+        </a>
+
+      <a href="#img-2"> <%= image_tag "ZooKeeper (2).JPG", alt: "alttext", class:"col-md-6 col-sm-12" %></a>
+        <a href="#_" class="overlay" id="img-2">
+          <%= image_tag  "ZooKeeper (2).JPG", class:"mx-auto" %>
+        </a>
+
+
+      <a href="#img-3"> <%= image_tag "ZooKeeper (3).jpg", alt: "alttext", class:"col-md-6 col-sm-12 mt-2" %></a>
+        <a href="#_" class="overlay" id="img-3">
+          <%= image_tag  "ZooKeeper (3).jpg", class:"mx-auto" %>
+        </a>
+
+
+      <a href="#img-4"><%= image_tag "ZooKeeper (4).JPG", alt: "alttext", class:"col-md-12 col-sm-12 col-lg-6 mt-2" %></a>
+        <a href="#_" class="overlay" id="img-4">
+          <%= image_tag  "ZooKeeper (4).JPG", class:"mx-auto" %>
+        </a>
+    </div>
+
+    <div class="content col-md-6 espace">
+      <h1>WHAT WE OFFER</h1>
+        <h2>ESPACE</h2>
+        <div class="card-text">
+          <p>
+            Le popup store Zookeeper est un espace agréable, moderne et chaleureux. Le bardage les murs peints en
+            blanc apporte une note moderne et chaleureuse en même temps. Le plafond avec ses poutres blanches apparentes
+            confère un charme certain. Le sol en parquet gris ainsi que l'éclairage aux néons créent une touche de modernité.
+            Le lieu de 40m2 comprend une réserve qui peut également servir de dressing ou de lieu d'exposition
+            complémentaire. Une belle surface de vitrine de 5m2 linéaires donnant sur le rue apporte une visibilté et de
+            la lumière. Les meubles faits sur-mesure en bois clair vous permettent de moduler l'espace à votre guise.
+            WC, point d'eau et Wifi à votre disposition.
+          </p>
+          <p><strong>bullet-points sur services (wifi, toilettes, dressing etc...)</strong></p>
+        </div>
+    </div>
+
+    <div class="row flex-md-row">
+      <div class="content col-md-6">
+        <h2>SÉRÉNITÉ</h2>
+        <div class="card-text">
+          <p>
+            Elizabeth Relin vous accompagne dans la réalisation de projet, vous conseille et vous guide selon vos besoins.
+            L'équipe Zookeeper vous propose des services optionnels sur devis tels que la photographie de vos évènements
+            ou du catering... afin que vous puissiez profiter de votre moment en toute sérénité. Zookeeper aime participer à votre
+            évènement : nous partageons vos invitations ainsi que vos évènements Facebook sur notre site et sur nos réseaux sociaux :
+            Facebook et Instagram ! Tout au long de la préparation de votre évènement nous sommes à votre disposition pour répondre à
+            toutes vos interrogations et faire de cet évènement VOTRE moment.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+
+         <a href="#img-5"><%= image_tag "Zookeeper space (17).JPG", alt: "alttext", class:"col-md-12 col-sm-12 col-lg-6" %></a>
+        <a href="#_" class="overlay" id="img-5">
+          <%= image_tag  "Zookeeper space (17).JPG", class:"mx-auto" %>
+        </a>
+
+        <a href="#img-6"><%= image_tag "Zookeeper space (1).JPG", alt: "alttext", class:"col-md-12 col-sm-12 col-lg-6" %></a>
+        <a href="#_" class="overlay" id="img-6">
+          <%= image_tag  "Zookeeper space (1).JPG", class:"mx-auto" %>
+        </a>
+
+      </div>
+    </div>
+  </div>
+
+
+    <div class="row .flex-md-column justify-content-md-space-between" id="tarifs">
+      <div class="content col-md-3 flex-grow col-sm-12 col-lg-3" >
+        <div>
+        <h1><div></div>TARIFS</h1>
+        <button class="btn btn-light"><a href="#contact" class="nav-link"><h2>DEMANDEZ UN DEVIS</h2></a></button>
+      </div>
+      </div>
+        <div class="card-price col-lg-3 flex-grow col-sm-12">
+          <h2>JOURNÉE</h2>
+          <div class="text-center">
+            <p>à partir de</p>
+            <h1>275 €</h1>
+          </div>
+        </div>
+
+      <div class="card-price col-lg-3 flex-grow col-sm-12">
+        <h2>SEMAINE</h2>
+        <div class="text-center">
+          <p>à partir de</p>
+          <h1>1595 €</h1>
+        </div>
+      </div>
+
+      <div class="card-price col-lg-3 flex-grow col-sm-12">
+        <h2>MOIS</h2>
+        <div class="text-center">
+          <p>à partir de</p>
+          <h1>4000 €</h1>
+        </div>
+      </div>
+    </div>
+
+  <div class="content" id="equipe">
+    <h1>L'ÉQUIPE</h1>
+    <div class=" row .flex justify-content-md-space-between">
+
+      <div class="d-flex flex-row col-md-12 col-sm-12 col-lg-6 justify-content-md-space-between team" id="member1">
+        <div class="img-team my-auto">
+          <%= image_tag "self-portrait.jpg", alt: "alttext", class:"avatar-large my-auto" %>
+        </div>
+        <div class="desc-team">
+          <h3>Elizabeth Relin</h3>
+          <p>Fondatrice de Zookeeper, Elizabeth carbure au quinoa, est dingue de yoga et surtout elle adore les idées nouvelles, la mode et vous accompagnera dans votre projet.</p>
+          <ul class="links">
+            <li><a href="https://fr-fr.facebook.com/Zookeeperpopup"><i class="fa fa-facebook-square"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/elizabeth-relin-502a7b48/"><i class="fa fa-linkedin-square"></i></a></li>
+            <li><a href="https://www.pinterest.fr/boutique0543/"><i class="fa fa-pinterest-square"></i></a></li>
+            <li><a href="https://www.instagram.com/wowoparis/?hl=fr"><i class="fa fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="d-flex flex-row col-md-12 col-sm-12 col-lg-6 justify-content-md-space-between team" id="member2">
+        <div class="img-team my-auto">
+          <%= image_tag "Spiked-Aurora.jpg", alt: "alttext", class:"avatar-large my-auto" %>
+        </div>
+        <div class="desc-team">
+          <h3>Elizabeth Relin</h3>
+          <p>Fondatrice de Zookeeper, Elizabeth carbure au quinoa, est dingue de yoga et surtout elle adore les idées nouvelles, la mode et vous accompagnera dans votre projet.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content" id="contact">
+    <div class="row flex-md-row">
+      <div class="col-md-6 col-sm-12">
+        <h1>CONTACT</h1>
+        <p>Vous souhaitez réaliser une visite ? Des informations sur nos disponibilités ?</p>
+        <p>Appelez-nous : <strong>06 23 08 68 55</strong></p>
+        <div class="flex-lg-row">
+          <p>Rendez-nous visite : <strong>59 rue Notre-Dame de Nazareth</strong></p>
+          <p class="push-left"><strong> 75003, Paris</strong></p>
+        </div>
+        <p class="links">Suivez-nous :
+          <a href="https://fr-fr.facebook.com/Zookeeperpopup"><i class="fa fa-facebook-square icon"></i></a>
+          <a href="https://www.linkedin.com/in/elizabeth-relin-502a7b48/"><i class="fa fa-linkedin-square icon"></i></a>
+          <a href="https://www.pinterest.fr/boutique0543/"><i class="fa fa-pinterest-square icon"></i></a>
+          <a href="https://www.instagram.com/wowoparis/?hl=fr"><i class="fa fa-instagram icon"></i></a>
+        </p>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <%= render 'contact_form' %>
+      </div>
+    </div>
+  </div>
+</div>
+  <footer class="row flex-lg-row justify-content-md-space-between">
+    <div class="col-lg-6">
+      <p>All rights reserved to Zookeeper</p>
+    </div>
+    <div class="col-lg-6 pr-0">
+      <p class="text-right">Web design & development by Mateo Blanc</p>
+    </div>
+  </footer>
+
+<script defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqqVs_c1AgmeUONu8-gsmyWxnV7HZjEnU&callback=initMap">
+</script>

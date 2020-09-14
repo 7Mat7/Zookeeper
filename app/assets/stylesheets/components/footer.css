@@ -1,0 +1,14 @@
+footer {
+  height: 62px;
+  background-color: white;
+  position: relative;
+  margin-top: 80px;
+  margin-right: 0;
+  width: 100%;
+}
+
+footer p {
+  position: absolute;
+  bottom: 0;
+  width: 95%;
+}
