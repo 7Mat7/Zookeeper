@@ -220,6 +220,7 @@ DEPENDENCIES
   bootsnap (>= 1.4.2)
   bootstrap-datepicker-rails
   bootstrap-sass (~> 3.3, >= 3.3.6)
+  bundler (~> 2.1, >= 2.1.4)
   byebug
   capybara (>= 2.15)
   dotenv-rails

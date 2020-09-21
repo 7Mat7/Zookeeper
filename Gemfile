@@ -27,6 +27,7 @@ gem 'mail_form'
 gem 'jquery-rails', '~> 4.1', '>= 4.1.1'
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'bootstrap-datepicker-rails'
+gem 'bundler', '~> 2.1', '>= 2.1.4'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
