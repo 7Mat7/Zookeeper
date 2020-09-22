@@ -29,6 +29,7 @@ gem 'dotenv-rails', groups: [:development, :test]
 gem 'bootstrap-datepicker-rails'
 gem 'bundler', '~> 2.1', '>= 2.1.4'
 gem "figaro"
+gem 'sendgrid-ruby'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
