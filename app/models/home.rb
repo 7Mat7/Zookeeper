@@ -12,7 +12,8 @@ class Home < MailForm::Base
     {
       :subject => "Contact Form Inquiry",
       :to => "elizabethzookeeper@gmail.com",
-      :from => %("#{name}" <#{email}>),
+      :from => "elizabethzookeeper@gmail.com",
+      :contact => %("#{name}" <#{email}>),
       :date => %("#{start_date} to #{end_date}")
     }
   end
