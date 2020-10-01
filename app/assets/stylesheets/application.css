@@ -22,13 +22,13 @@ p {
 
 h1, h2, h3 {
   font-family: 'Karla';
-  color: #394962;
-}
-
-h1 {
-    color: #2B4162;
+  color:  #2B4162;
 }
 
 body {
- background-color: #eeeeee !important;
+ background-color: #f4f4f4 !important;
+}
+
+html {
+  overflow-x: hidden;
 }

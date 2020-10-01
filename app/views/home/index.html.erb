@@ -27,11 +27,20 @@
 <div class="container">
   <div class="row flex-md-row mt-5">
     <div class="content col-md-6" id="aboutus">
-      <h1>ABOUT US</h1>
-      <p class="about">Vous avez une idée superbe, il vous manque un lieu : Zookeeper est là pour vous !!
-          Notre idée ? Mettre à votre disposition un espace agréable, pratique et central afin que vous puissiez créer votre vision. Passez du virtuel au réel avec Zookeeper.
+      <h1>A PROPOS</h1>
+      <p class="about">
+        L&#39;espace Zookeeper situé dans le Nord Marais, au 59 rue Notre-Dame de Nazareth, bénéficie
+        d’une excellente localisation très prisée des parisiens et des touristes et desservie par les
+        stations Temple (ligne 3), République (lignes 3, 5, 8, 9, 11) et Arts et Métiers (lignes 3, 11).
       </p>
-      <p><strong>emplacement + taille + avantages (modulable...)</strong></p>
+      <p>La boutique de 39m2 s&#39;étend derrière une large vitrine de 5m2 linéaires donnant directement sur la
+        rue Notre Dame de Nazareth accordant ainsi une très belle visibilité à vos
+        événements.
+      </p>
+      <p>L’espace de 39m2 comprend une belle réserve qui peut également servir de
+        dressing ou de lieu d’exposition supplémentaire. Murs et poutres au plafond peints en blanc, sol en bois gris, éclairage au néon, ce
+        lieu allie charme et modernité.
+      </p>
     </div>
 
     <div class="content col-md-6">
@@ -40,7 +49,7 @@
           function initMap() {
             const boutique = {lat: 48.867720, lng: 2.356060};
             const map = new google.maps.Map(
-                document.getElementById('map'), {zoom: 12, center: boutique});
+                document.getElementById('map'), {zoom: 13, center: boutique});
             const marker = new google.maps.Marker({position: boutique, map: map});
           }
         </script>
@@ -73,35 +82,45 @@
         </a>
     </div>
 
-    <div class="content col-md-6 espace">
-      <h1>WHAT WE OFFER</h1>
-        <h2>ESPACE</h2>
-        <div class="card-text">
-          <p>
-            Le popup store Zookeeper est un espace agréable, moderne et chaleureux. Le bardage les murs peints en
-            blanc apporte une note moderne et chaleureuse en même temps. Le plafond avec ses poutres blanches apparentes
-            confère un charme certain. Le sol en parquet gris ainsi que l'éclairage aux néons créent une touche de modernité.
-            Le lieu de 40m2 comprend une réserve qui peut également servir de dressing ou de lieu d'exposition
-            complémentaire. Une belle surface de vitrine de 5m2 linéaires donnant sur le rue apporte une visibilté et de
-            la lumière. Les meubles faits sur-mesure en bois clair vous permettent de moduler l'espace à votre guise.
-            WC, point d'eau et Wifi à votre disposition.
+    <div class="content col-md-6">
+      <h1>LA BOUTIQUE</h1>
+        <h2>ACCOMPAGNEMENT</h2>
+        <div class="card-text accompagnement">
+          <p>Elizabeth Relin, professionnelle de la mode vous accompagne dans la réalisation de votre
+              projet, vous conseille et vous guide selon vos besoins.
           </p>
-          <p><strong>bullet-points sur services (wifi, toilettes, dressing etc...)</strong></p>
+          <p>L’équipe Zookeeper vous propose des services optionnels sur devis :</p>
+          <ul class="row flex-row">
+            <div class="col-6">
+              <li>Catering</li>
+              <li>Photographe</li>
+              <li>Personnel d’accueil</li>
+            </div>
+            <div class="col-6">
+              <li>Personnel de sécurité</li>
+              <li>DJ</li>
+              <li>Location de mobilier</li>
+            </div>
+          </ul>
         </div>
     </div>
 
     <div class="row flex-md-row">
-      <div class="content col-md-6">
-        <h2>SÉRÉNITÉ</h2>
-        <div class="card-text">
-          <p>
-            Elizabeth Relin vous accompagne dans la réalisation de projet, vous conseille et vous guide selon vos besoins.
-            L'équipe Zookeeper vous propose des services optionnels sur devis tels que la photographie de vos évènements
-            ou du catering... afin que vous puissiez profiter de votre moment en toute sérénité. Zookeeper aime participer à votre
-            évènement : nous partageons vos invitations ainsi que vos évènements Facebook sur notre site et sur nos réseaux sociaux :
-            Facebook et Instagram ! Tout au long de la préparation de votre évènement nous sommes à votre disposition pour répondre à
-            toutes vos interrogations et faire de cet évènement VOTRE moment.
+      <div class="content col-md-6 px-5">
+        <h2>ÉQUIPEMENT</h2>
+        <div class="card-text accompagnement">
+          <p> Zookeeper met à votre disposition une large boutique de 35m²
+              avec une belle vitrine vous donnant une belle visibilité.
           </p>
+          <ul>
+            <li>Une réserve pouvant également servir de dressing</li>
+            <li>Un point d’eau et wc</li>
+            <li>Le Wifi</li>
+          </ul>
+            <p>Des meubles en bois clair modulables vous permettent de créer des présentoirs, de ranger vos
+                produits...</p>
+          <p> Vous avez également à votre disposition des portants ainsi qu’une petite table carrée avec 4
+              tabourets assortis, un réfrigérateur, un fer à repasser, une bouilloire.</p>
         </div>
       </div>
 
@@ -124,12 +143,12 @@
 
     <div class="row .flex-md-column justify-content-md-space-between" id="tarifs">
       <div class="content col-md-3 flex-grow col-sm-12 col-lg-3" >
-        <div>
+        <div class="tarifs-align">
         <h1><div></div>TARIFS</h1>
-        <button class="btn btn-light"><a href="#contact" class="nav-link"><h2>DEMANDEZ UN DEVIS</h2></a></button>
+        <button class="btn btn-light nav-link"><a href="#contact"><h2>DEMANDEZ UN DEVIS</h2></a></button>
       </div>
       </div>
-        <div class="card-price col-lg-3 flex-grow col-sm-12">
+        <div class="card-price col-lg-3 flex-grow col-sm-3">
           <h2>JOURNÉE</h2>
           <div class="text-center">
             <p>à partir de</p>
@@ -137,7 +156,7 @@
           </div>
         </div>
 
-      <div class="card-price col-lg-3 flex-grow col-sm-12">
+      <div class="card-price col-lg-3 flex-grow col-sm-3">
         <h2>SEMAINE</h2>
         <div class="text-center">
           <p>à partir de</p>
@@ -145,7 +164,7 @@
         </div>
       </div>
 
-      <div class="card-price col-lg-3 flex-grow col-sm-12">
+      <div class="card-price col-lg-3 flex-grow col-sm-3">
         <h2>MOIS</h2>
         <div class="text-center">
           <p>à partir de</p>
@@ -156,15 +175,17 @@
 
   <div class="content" id="equipe">
     <h1>L'ÉQUIPE</h1>
-    <div class=" row .flex justify-content-md-space-between">
+    <div class="d-flex flex-row-reverse justify-content-md-space-between">
 
-      <div class="d-flex flex-row col-md-12 col-sm-12 col-lg-6 justify-content-md-space-between team" id="member1">
+      <div class="d-flex flex-row col-md-12 col-sm-12 col-lg-6 justify-content-md-space-between team">
         <div class="img-team my-auto">
           <%= image_tag "self-portrait.jpg", alt: "alttext", class:"avatar-large my-auto" %>
         </div>
         <div class="desc-team">
           <h3>Elizabeth Relin</h3>
-          <p>Fondatrice de Zookeeper, Elizabeth carbure au quinoa, est dingue de yoga et surtout elle adore les idées nouvelles, la mode et vous accompagnera dans votre projet.</p>
+          <p> Elizabeth Relin est la fondatrice de Zookeeper mais aussi  créatrice de la marque de vêtements WOWO.
+              Elle est dingue de folk Art américain et surtout elle adore les idées nouvelles, la mode et vous
+              accompagnera dans votre projet.</p>
           <ul class="links">
             <li><a href="https://fr-fr.facebook.com/Zookeeperpopup"><i class="fa fa-facebook-square"></i></a></li>
             <li><a href="https://www.linkedin.com/in/elizabeth-relin-502a7b48/"><i class="fa fa-linkedin-square"></i></a></li>
@@ -174,15 +195,15 @@
         </div>
       </div>
 
-      <div class="d-flex flex-row col-md-12 col-sm-12 col-lg-6 justify-content-md-space-between team" id="member2">
+      <!-- <div class="d-flex flex-row col-md-12 col-sm-12 col-lg-6 justify-content-md-space-between team" id="member2">
         <div class="img-team my-auto">
           <%= image_tag "Spiked-Aurora.jpg", alt: "alttext", class:"avatar-large my-auto" %>
         </div>
         <div class="desc-team">
           <h3>Elizabeth Relin</h3>
-          <p>Fondatrice de Zookeeper, Elizabeth carbure au quinoa, est dingue de yoga et surtout elle adore les idées nouvelles, la mode et vous accompagnera dans votre projet.</p>
+          <p>Elizabeth Relin est la fondatrice de Zookeeper mais aussi  créatrice de la marque de vêtements WOWO. Elle est dingue de folk Art américain et surtout elle adore les idées nouvelles, la mode et vous accompagnera dans votre projet.</p>
         </div>
-      </div>
+       </div> -->
     </div>
   </div>
 
@@ -209,13 +230,9 @@
     </div>
   </div>
 </div>
-  <footer class="row flex-lg-row justify-content-md-space-between">
-    <div class="col-lg-6">
+  <footer>
       <p>All rights reserved to Zookeeper</p>
-    </div>
-    <div class="col-lg-6 pr-0">
-      <p class="text-right">Web design & development by Mateo Blanc</p>
-    </div>
+      <p>Web design & development by Mateo Blanc</p>
   </footer>
 
 <script defer

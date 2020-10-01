@@ -16,11 +16,6 @@
     margin-bottom: 0;
 }
 
-.desc-team ul {
-  position: absolute;
-  right: 19px;
-}
-
 @media (max-width: 1000px) {
   .team {
     flex-direction: column;
@@ -51,7 +46,7 @@
   }
 }
 
-li {
+.links li {
   display: inline;
   width: auto;
   height: auto;

@@ -1,7 +1,3 @@
-.content {
-  /*margin-bottom: 120px;*/
-}
-
 #whatweoffer > .content {
   margin-bottom: 40px;
 }
@@ -10,19 +6,21 @@
   margin-top: 160px;
 }
 
-.content h1 {
-  font-size: 60px;
-  margin-bottom: 24px;
-}
+.content {
+  h1 {
+    font-size: 60px;
+    margin-bottom: 24px;
+  }
 
-.content h2 {
-  font-weight: bold;
-  margin-left: 16px;
-  margin-bottom: 16px;
+  h2 {
+    font-weight: bold;
+    margin-left: 16px;
+    margin-bottom: 16px;
+  }
 }
 
 #map {
-  height: 300px;
+  height: 400px;
   width: 100%;
 }
 
@@ -43,7 +41,14 @@
   text-align: start;
 }
 
-@media (max-width: 550px) {
+@media (min-width: 767px) and (max-width: 992px) {
+  #map {
+    position: absolute;
+    top: 100px;
+  }
+}
+
+@media (max-width: 767px) {
   #whatweoffer > .photos {
     order: 2;
   }
@@ -103,4 +108,34 @@
 
 .push-left {
   margin-left: 126px;
+}
+
+.accompagnement {
+  p {
+    margin-bottom: 24px;
+  }
+
+  ul {
+  list-style: none;
+  margin: 2em;
+  padding: 0;
+  font-family: 'Montserrat';
+
+    li {
+      padding-left: 1.5em;
+      position: relative;
+      font-size: 14px;
+
+      &:after {
+        content: '';
+        height: .4em;
+        width: .4em;
+        background: black;
+        position: absolute;
+        transform: rotate(45deg);
+        top: .5em;
+        left: 0;
+      }
+    }
+  }
 }
