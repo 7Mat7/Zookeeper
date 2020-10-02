@@ -29,18 +29,17 @@
     <div class="content col-md-6" id="aboutus">
       <h1>A PROPOS</h1>
       <p class="about">
-        L&#39;espace Zookeeper situé dans le Nord Marais, au 59 rue Notre-Dame de Nazareth, bénéficie
-        d’une excellente localisation très prisée des parisiens et des touristes et desservie par les
-        stations Temple (ligne 3), République (lignes 3, 5, 8, 9, 11) et Arts et Métiers (lignes 3, 11).
+        L&#39;espace Zookeeper situé dans le Nord Marais,au <strong>59 rue Notre-Dame de Nazareth</strong>, bénéficie
+        d’une excellente localisation dans une rue passante et piétonnisée le week-end.
       </p>
       <p>La boutique de 39m2 s&#39;étend derrière une large vitrine de 5m2 linéaires donnant directement sur la
-        rue Notre Dame de Nazareth accordant ainsi une très belle visibilité à vos
-        événements.
+        rue accordant ainsi une très belle visibilité à vos événements.
       </p>
-      <p>L’espace de 39m2 comprend une belle réserve qui peut également servir de
-        dressing ou de lieu d’exposition supplémentaire. Murs et poutres au plafond peints en blanc, sol en bois gris, éclairage au néon, ce
-        lieu allie charme et modernité.
+      <p>L’espace comprend une réserve qui peut également servir de dressing ou de lieu d’exposition supplémentaire.
+        Murs et poutres au plafond peints en blanc, sol en bois gris, éclairage au néon, ce lieu allie charme et modernité.
       </p>
+      <p>Boutique desservie par les stations Temple (ligne 3), République (lignes 3, 5, 8, 9, 11) Arts et Métiers (lignes 3,
+         11) et Strasbourg Saint-Denis (lignes 4, 8, 9).</p>
     </div>
 
     <div class="content col-md-6">
@@ -68,7 +67,6 @@
         <a href="#_" class="overlay" id="img-2">
           <%= image_tag  "ZooKeeper (2).JPG", class:"mx-auto" %>
         </a>
-
 
       <a href="#img-3"> <%= image_tag "ZooKeeper (3).jpg", alt: "alttext", class:"col-md-6 col-sm-12 mt-2" %></a>
         <a href="#_" class="overlay" id="img-3">
@@ -173,28 +171,47 @@
       </div>
     </div>
 
-  <div class="content" id="equipe">
-    <h1>L'ÉQUIPE</h1>
-    <div class="d-flex flex-row-reverse justify-content-md-space-between">
 
-      <div class="d-flex flex-row col-md-12 col-sm-12 col-lg-6 justify-content-md-space-between team">
-        <div class="img-team my-auto">
-          <%= image_tag "self-portrait.jpg", alt: "alttext", class:"avatar-large my-auto" %>
+  <div class="content" id="contact">
+    <div class="row flex-md-row-reverse">
+      <div class="col-md-6 col-sm-12 text-right">
+        <h1 class="text-right">CONTACT</h1>
+        <p>Vous souhaitez réaliser une visite ? Des informations sur nos disponibilités ?</p>
+        <p>Appelez-nous : <strong>06 23 08 68 55</strong></p>
+        <div class="flex-lg-row">
+          <p>Rendez-nous visite : <strong>59 rue Notre-Dame de Nazareth</strong></p>
+          <p class="push-left"><strong> 75003, Paris</strong></p>
+          <p>Écrivez-nous: <strong>elizabethzookeeper@gmail.com</strong></p>
         </div>
-        <div class="desc-team">
-          <h3>Elizabeth Relin</h3>
-          <p> Elizabeth Relin est la fondatrice de Zookeeper mais aussi  créatrice de la marque de vêtements WOWO.
-              Elle est dingue de folk Art américain et surtout elle adore les idées nouvelles, la mode et vous
-              accompagnera dans votre projet.</p>
-          <ul class="links">
-            <li><a href="https://fr-fr.facebook.com/Zookeeperpopup"><i class="fa fa-facebook-square"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/elizabeth-relin-502a7b48/"><i class="fa fa-linkedin-square"></i></a></li>
-            <li><a href="https://www.pinterest.fr/boutique0543/"><i class="fa fa-pinterest-square"></i></a></li>
-            <li><a href="https://www.instagram.com/wowoparis/?hl=fr"><i class="fa fa-instagram"></i></a></li>
-          </ul>
-        </div>
+        <p class="links">Suivez-nous :
+          <a href="https://fr-fr.facebook.com/Zookeeperpopup"><i class="fa fa-facebook-square icon"></i></a>
+          <a href="https://www.linkedin.com/in/elizabeth-relin-502a7b48/"><i class="fa fa-linkedin-square icon"></i></a>
+          <!-- <a href="https://www.pinterest.fr/boutique0543/"><i class="fa fa-pinterest-square icon"></i></a> -->
+          <a href="https://www.instagram.com/wowoparis/?hl=fr"><i class="fa fa-instagram icon"></i></a>
+        </p>
       </div>
-
+      <div class="col-md-6 col-sm-12">
+        <%= render 'contact_form' %>
+      </div>
+    </div>
+  </div>
+  <div class="content" id="equipe">
+    <div class="d-flex flex-row-reverse row col-sm-12 col-lg-8 justify-content-md-space-between team">
+      <div class="img-team">
+        <%= image_tag "self-portrait.jpg", alt: "alttext", class:"avatar-large my-auto" %>
+      </div>
+      <div class="desc-team text-center">
+        <h2>Elizabeth Relin</h2>
+        <p> Elizabeth Relin est la fondatrice de Zookeeper mais aussi  créatrice de la marque de vêtements WOWO.
+            Elle est dingue de folk Art américain et surtout elle adore les idées nouvelles, la mode et vous
+            accompagnera dans votre projet.</p>
+        <ul class="links text-center">
+          <li><a href="https://fr-fr.facebook.com/Zookeeperpopup"><i class="fa fa-facebook-square"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/elizabeth-relin-502a7b48/"><i class="fa fa-linkedin-square"></i></a></li>
+          <li><a href="https://www.pinterest.fr/boutique0543/"><i class="fa fa-pinterest-square"></i></a></li>
+          <li><a href="https://www.instagram.com/wowoparis/?hl=fr"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+      </div>
       <!-- <div class="d-flex flex-row col-md-12 col-sm-12 col-lg-6 justify-content-md-space-between team" id="member2">
         <div class="img-team my-auto">
           <%= image_tag "Spiked-Aurora.jpg", alt: "alttext", class:"avatar-large my-auto" %>
@@ -204,29 +221,6 @@
           <p>Elizabeth Relin est la fondatrice de Zookeeper mais aussi  créatrice de la marque de vêtements WOWO. Elle est dingue de folk Art américain et surtout elle adore les idées nouvelles, la mode et vous accompagnera dans votre projet.</p>
         </div>
        </div> -->
-    </div>
-  </div>
-
-  <div class="content" id="contact">
-    <div class="row flex-md-row">
-      <div class="col-md-6 col-sm-12">
-        <h1>CONTACT</h1>
-        <p>Vous souhaitez réaliser une visite ? Des informations sur nos disponibilités ?</p>
-        <p>Appelez-nous : <strong>06 23 08 68 55</strong></p>
-        <div class="flex-lg-row">
-          <p>Rendez-nous visite : <strong>59 rue Notre-Dame de Nazareth</strong></p>
-          <p class="push-left"><strong> 75003, Paris</strong></p>
-        </div>
-        <p class="links">Suivez-nous :
-          <a href="https://fr-fr.facebook.com/Zookeeperpopup"><i class="fa fa-facebook-square icon"></i></a>
-          <a href="https://www.linkedin.com/in/elizabeth-relin-502a7b48/"><i class="fa fa-linkedin-square icon"></i></a>
-          <a href="https://www.pinterest.fr/boutique0543/"><i class="fa fa-pinterest-square icon"></i></a>
-          <a href="https://www.instagram.com/wowoparis/?hl=fr"><i class="fa fa-instagram icon"></i></a>
-        </p>
-      </div>
-      <div class="col-md-6 col-sm-12">
-        <%= render 'contact_form' %>
-      </div>
     </div>
   </div>
 </div>
