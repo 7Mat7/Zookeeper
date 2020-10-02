@@ -8,7 +8,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-         <h2><a class="nav-link" href="#whatweoffer">Notre espace <span class="sr-only">(current)</span></a></h2>
+         <h2><a class="nav-link px-5" href="#whatweoffer">Notre espace</a></h2>
         </li>
         <li class="nav-item">
           <h2><a class="nav-link" href="#contact">Réservez</a></h2>
@@ -19,20 +19,20 @@
 </div>
 
 <div class="banner">
-    <%= image_tag "Slider2.jpg", alt: "alttext" %>
-  </div>
-
+    <%= image_tag "photo boutique.jpg", alt: "alttext" %>
+    <a onclick="smoothScroll(document.getElementById('aboutus'))" class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon="" id="scroll"></a>
+    <div id="aboutus"></div>
 </div>
 
 <div class="container">
   <div class="row flex-md-row mt-5">
-    <div class="content col-md-6" id="aboutus">
+    <div class="content col-md-6">
       <h1>A PROPOS</h1>
       <p class="about">
         L&#39;espace Zookeeper situé dans le Nord Marais,au <strong>59 rue Notre-Dame de Nazareth</strong>, bénéficie
         d’une excellente localisation dans une rue passante et piétonnisée le week-end.
       </p>
-      <p>La boutique de 39m2 s&#39;étend derrière une large vitrine de 5m2 linéaires donnant directement sur la
+      <p>La boutique de <strong>39m2</strong> s&#39;étend derrière une large vitrine de 5m2 linéaires donnant directement sur la
         rue accordant ainsi une très belle visibilité à vos événements.
       </p>
       <p>L’espace comprend une réserve qui peut également servir de dressing ou de lieu d’exposition supplémentaire.
@@ -196,8 +196,8 @@
     </div>
   </div>
   <div class="content" id="equipe">
-    <div class="d-flex flex-row-reverse row col-sm-12 col-lg-8 justify-content-md-space-between team">
-      <div class="img-team">
+    <div class="d-flex row">
+      <div class="img-team text-center pb-3">
         <%= image_tag "self-portrait.jpg", alt: "alttext", class:"avatar-large my-auto" %>
       </div>
       <div class="desc-team text-center">
