@@ -19,8 +19,13 @@
 </div>
 
 <div class="banner">
-    <%= image_tag "photo boutique.jpg", alt: "alttext" %>
+  <div class="backdrop">
+    <div class="target a"></div>
+      <div><h1 class="pop">POP</h1></div>
+    <div class="target b"></div>
+      <div><h1 class="up">UP</h1></div>
     <a onclick="smoothScroll(document.getElementById('aboutus'))" class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon="" id="scroll"></a>
+  </div>
     <div id="aboutus"></div>
 </div>
 
@@ -55,8 +60,8 @@
       </div>
     </div>
   </div>
-
-  <div class="row flex-md-row" id="whatweoffer">
+  <div id="whatweoffer"></div>
+  <div class="row flex-md-row spacer">
     <div class="col-md-6 photos">
       <a href="#img-1"> <%= image_tag  "ZooKeeper (1).JPG", alt: "alttext", class:"col-md-12 col-sm-12 col-lg-6" %></a>
         <a href="#_" class="overlay" id="img-1">
@@ -170,9 +175,9 @@
         </div>
       </div>
     </div>
+<div id="contact"></div>
 
-
-  <div class="content" id="contact">
+  <div class="content spacer">
     <div class="row flex-md-row-reverse">
       <div class="col-md-6 col-sm-12 text-right">
         <h1 class="text-right">CONTACT</h1>
