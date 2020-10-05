@@ -11,9 +11,6 @@
  *
  * Date: 2019-05-01T21:04Z
  */
-
- console.log('je suis ici');
-
 ( function( global, factory ) {
 
 	"use strict";

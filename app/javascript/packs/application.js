@@ -19,8 +19,6 @@
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
-console.log('je suis là');
-
 window.smoothScroll = function(target) {
     var scrollContainer = target;
     do { //find scroll container
