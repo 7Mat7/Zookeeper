@@ -6,6 +6,7 @@
   h1 {
     font-size: 60px;
     margin-bottom: 24px;
+    font-weight: bold;
   }
 
   h2 {
@@ -99,10 +100,6 @@
 
 .overlay:target img {
     transform: scale(1);
-}
-
-.push-left {
-  margin-left: 126px;
 }
 
 .accompagnement {
