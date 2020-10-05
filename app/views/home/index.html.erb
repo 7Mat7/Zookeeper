@@ -63,26 +63,21 @@
   <div id="whatweoffer"></div>
   <div class="row flex-md-row spacer">
     <div class="col-md-6 photos">
-      <a href="#img-1"> <%= image_tag  "ZooKeeper (1).JPG", alt: "alttext", class:"col-md-12 col-sm-12 col-lg-6" %></a>
-        <a href="#_" class="overlay" id="img-1">
-          <%= image_tag  "ZooKeeper (1).JPG", class:"mx-auto" %>
-        </a>
+        <%= link_to "/assets/ZooKeeper (1).JPG", class:"col-md-12 col-sm-12 col-lg-6", data: { lightbox: "image-1", title: 'Image Caption'}  do %>
+          <%= image_tag "/assets/ZooKeeper (1).JPG", class:"mx-auto img-size" %>
+        <%end%>
 
-      <a href="#img-2"> <%= image_tag "ZooKeeper (2).JPG", alt: "alttext", class:"col-md-6 col-sm-12" %></a>
-        <a href="#_" class="overlay" id="img-2">
-          <%= image_tag  "ZooKeeper (2).JPG", class:"mx-auto" %>
-        </a>
+        <%= link_to "/assets/ZooKeeper (2).JPG", class:"col-md-6 col-sm-12", data: { lightbox: "image-1", title: 'Image Caption'}  do %>
+          <%= image_tag "/assets/ZooKeeper (2).JPG", class:"mx-auto img-size" %>
+        <%end%>
 
-      <a href="#img-3"> <%= image_tag "ZooKeeper (3).jpg", alt: "alttext", class:"col-md-6 col-sm-12 mt-2" %></a>
-        <a href="#_" class="overlay" id="img-3">
-          <%= image_tag  "ZooKeeper (3).jpg", class:"mx-auto" %>
-        </a>
+        <%= link_to "/assets/ZooKeeper (3).jpg", class:"col-md-6 col-sm-12 mt-2", data: { lightbox: "image-1", title: 'Image Caption'}  do %>
+          <%= image_tag "/assets/ZooKeeper (3).jpg", class:"mx-auto img-size" %>
+        <%end%>
 
-
-      <a href="#img-4"><%= image_tag "ZooKeeper (4).JPG", alt: "alttext", class:"col-md-12 col-sm-12 col-lg-6 mt-2" %></a>
-        <a href="#_" class="overlay" id="img-4">
-          <%= image_tag  "ZooKeeper (4).JPG", class:"mx-auto" %>
-        </a>
+        <%= link_to "/assets/ZooKeeper(4).jpg", class:"col-md-12 col-sm-12 col-lg-6 mt-2", data: { lightbox: "image-1", title: 'Image Caption'}  do %>
+          <%= image_tag "/assets/ZooKeeper(4).jpg", class:"mx-auto img-size" %>
+        <%end%>
     </div>
 
     <div class="content col-md-6">
@@ -129,15 +124,13 @@
 
       <div class="col-md-6 pt-5">
 
-         <a href="#img-5"><%= image_tag "Zookeeper space (17).JPG", alt: "alttext", class:"col-md-12 col-sm-12 col-lg-6" %></a>
-        <a href="#_" class="overlay" id="img-5">
-          <%= image_tag  "Zookeeper space (17).JPG", class:"mx-auto" %>
-        </a>
+        <%= link_to "/assets/Zookeeper space (17).JPG", class:"col-md-12 col-sm-12 col-lg-6", data: { lightbox: "image-1", title: 'Image Caption'}  do %>
+          <%= image_tag "/assets/Zookeeper space (17).JPG", class:"mx-auto img-size" %>
+        <%end%>
 
-        <a href="#img-6"><%= image_tag "Zookeeper space (1).JPG", alt: "alttext", class:"col-md-12 col-sm-12 col-lg-6" %></a>
-        <a href="#_" class="overlay" id="img-6">
-          <%= image_tag  "Zookeeper space (1).JPG", class:"mx-auto" %>
-        </a>
+        <%= link_to "/assets/Zookeeper space (1).JPG", class:"col-md-12 col-sm-12 col-lg-6", data: { lightbox: "image-1", title: 'Image Caption'}  do %>
+          <%= image_tag "/assets/Zookeeper space (1).JPG", class:"mx-auto img-size" %>
+        <%end%>
 
       </div>
     </div>
@@ -175,7 +168,6 @@
           </div>
         </div>
     </div>
-<div id="contact"></div>
 
   <div class="content spacer">
     <div class="row flex-md-row-reverse">
@@ -237,3 +229,4 @@
 <script defer
   src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['API_KEY'] %>&callback=initMap">
 </script>
+
