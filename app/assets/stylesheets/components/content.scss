@@ -45,7 +45,7 @@
 }
 
 @media (max-width: 767px) {
-  #whatweoffer > .photos {
+    .photos {
     order: 2;
   }
 
@@ -83,3 +83,13 @@
     }
   }
 }
+
+  .resize {
+    padding-right: 0 !important;
+
+    & a, img {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+  }
+

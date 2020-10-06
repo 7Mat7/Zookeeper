@@ -1,22 +1,20 @@
-<div class="container">
-  <nav class="navbar navbar-light navbar-expand-lg navbar-expand-md fixed-top">
-    <a class="navbar-brand" href="#"><%= image_tag "logo.jpg", alt: "alttext", class:"navbar-brand" %></a>
-    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+<nav class="navbar navbar-light navbar-expand-md fixed-top">
+  <a class="navbar-brand" href="#"><%= image_tag "logo.jpg", alt: "alttext", class:"navbar-brand" %></a>
+  <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-         <h2><a class="nav-link px-5" href="#whatweoffer">Notre espace</a></h2>
-        </li>
-        <li class="nav-item">
-          <h2><a class="nav-link" href="#contact">Réservez</a></h2>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</div>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+       <h2><a class="nav-link px-5" href="#whatweoffer">Notre espace</a></h2>
+      </li>
+      <li class="nav-item">
+        <h2><a class="nav-link" href="#contact">Réservez</a></h2>
+      </li>
+    </ul>
+  </div>
+</nav>
 
 <div class="banner">
   <div class="backdrop">
@@ -62,25 +60,25 @@
   </div>
   <div id="whatweoffer"></div>
   <div class="row flex-md-row spacer">
-    <div class="col-md-6 photos">
-        <%= link_to "/assets/ZooKeeper (1).JPG", class:"col-md-12 col-sm-12 col-lg-6", data: { lightbox: "image-1", title: 'Zookeeper'}  do %>
-          <%= image_tag "/assets/ZooKeeper (1).JPG", class:"mx-auto img-size" %>
+    <div class="col-md-6 photos resize mt-md-5 mt-lg-0">
+        <%= link_to "/assets/ZooKeeper (1).JPG", class:"col-md-12 col-sm-12 col-lg-6 resize", data: { lightbox: "image-1", title: 'Zookeeper'}  do %>
+          <%= image_tag "/assets/ZooKeeper (1).JPG", class:"col-12 resize" %>
         <%end%>
 
-        <%= link_to "/assets/ZooKeeper (2).JPG", class:"col-md-6 col-sm-12", data: { lightbox: "image-1", title: 'Zookeeper'}  do %>
-          <%= image_tag "/assets/ZooKeeper (2).JPG", class:"mx-auto img-size" %>
+        <%= link_to "/assets/ZooKeeper (2).JPG", class:"col-md-6 col-sm-12 mt-2 resize mt-lg-0", data: { lightbox: "image-1", title: 'Zookeeper'}  do %>
+          <%= image_tag "/assets/ZooKeeper (2).JPG", class:"col-12 resize" %>
         <%end%>
 
-        <%= link_to "/assets/ZooKeeper (3).jpg", class:"col-md-6 col-sm-12 mt-2", data: { lightbox: "image-1", title: 'Zookeeper'}  do %>
-          <%= image_tag "/assets/ZooKeeper (3).jpg", class:"mx-auto img-size" %>
+        <%= link_to "/assets/ZooKeeper (3).jpg", class:"col-md-6 col-sm-12 mt-2 resize", data: { lightbox: "image-1", title: 'Zookeeper'}  do %>
+          <%= image_tag "/assets/ZooKeeper (3).jpg", class:"col-12 resize" %>
         <%end%>
 
-        <%= link_to "/assets/ZooKeeper(4).jpg", class:"col-md-12 col-sm-12 col-lg-6 mt-2", data: { lightbox: "image-1", title: 'Zookeeper'}  do %>
-          <%= image_tag "/assets/ZooKeeper(4).jpg", class:"mx-auto img-size" %>
+        <%= link_to "/assets/ZooKeeper(4).jpg", class:"d-md-none d-lg-inline col-sm-12 col-lg-6 mt-2 resize", data: { lightbox: "image-1", title: 'Zookeeper'}  do %>
+          <%= image_tag "/assets/ZooKeeper(4).jpg", class:"col-12 resize" %>
         <%end%>
     </div>
 
-    <div class="content col-md-6">
+    <div class="content col-12 col-md-6">
       <h1>LA BOUTIQUE</h1>
         <h2>ACCOMPAGNEMENT</h2>
         <div class="card-text accompagnement">
@@ -103,8 +101,8 @@
         </div>
     </div>
 
-    <div class="row flex-md-row">
-      <div class="content col-md-6 px-5 pt-5">
+    <div class="row flex-md-row col-12 resize">
+      <div class="content col-12 col-md-6 pt-5">
         <h2>ÉQUIPEMENT</h2>
         <div class="card-text accompagnement">
           <p> Zookeeper met à votre disposition une large boutique de 35m²
@@ -122,14 +120,18 @@
         </div>
       </div>
 
-      <div class="col-md-6 pt-5">
+      <div class="col-md-6 pt-5 col-12 resize">
 
-        <%= link_to "/assets/Zookeeper space (17).JPG", class:"col-md-12 col-sm-12 col-lg-6", data: { lightbox: "image-1", title: 'Zookeeper'}  do %>
-          <%= image_tag "/assets/Zookeeper space (17).JPG", class:"mx-auto img-size" %>
+        <%= link_to "/assets/Zookeeper space (17).JPG", class:"col-md-6 col-sm-12 col-lg-6 resize", data: { lightbox: "image-1", title: 'Zookeeper'}  do %>
+          <%= image_tag "/assets/Zookeeper space (17).JPG", class:"mx-auto col-12" %>
         <%end%>
 
-        <%= link_to "/assets/Zookeeper space (1).JPG", class:"col-md-12 col-sm-12 col-lg-6", data: { lightbox: "image-1", title: 'Zookeeper'}  do %>
-          <%= image_tag "/assets/Zookeeper space (1).JPG", class:"mx-auto img-size" %>
+        <%= link_to "/assets/Zookeeper space (1).JPG", class:"col-md-6 col-sm-12 col-lg-6 resize", data: { lightbox: "image-1", title: 'Zookeeper'}  do %>
+          <%= image_tag "/assets/Zookeeper space (1).JPG", class:"mx-auto col-12" %>
+        <%end%>
+
+        <%= link_to "/assets/ZooKeeper(4).jpg", class:"d-none d-md-inline d-lg-none col-sm-12 resize", data: { lightbox: "image-1", title: 'Zookeeper'}  do %>
+          <%= image_tag "/assets/ZooKeeper(4).jpg", class:"col-12 resize" %>
         <%end%>
 
       </div>
@@ -138,13 +140,13 @@
 
 
     <div class="row .flex-md-column" id="tarifs">
-      <div class="content col-md-3 flex-grow col-sm-12 col-lg-3" >
+      <div class="content flex-grow col-sm-12 col-lg-3" >
         <div class="tarifs-align">
         <h1><div></div>TARIFS</h1>
         <button class="btn btn-light nav-link"><a href="#contact"><h2>DEMANDEZ UN DEVIS</h2></a></button>
       </div>
       </div>
-        <div class="card-price col-lg-3 flex-grow col-sm-3">
+        <div class="card-price col-lg-3 flex-grow col-sm-4">
           <h2>JOURNÉE</h2>
           <div class="text-center">
             <p>à partir de</p>
@@ -152,7 +154,7 @@
           </div>
         </div>
 
-        <div class="card-price col-lg-3 flex-grow col-sm-3">
+        <div class="card-price col-lg-3 flex-grow col-sm-4">
           <h2>SEMAINE</h2>
           <div class="text-center">
             <p>à partir de</p>
@@ -160,7 +162,7 @@
           </div>
         </div>
 
-        <div class="card-price col-lg-3 flex-grow col-sm-3">
+        <div class="card-price col-lg-3 flex-grow col-sm-4">
           <h2>MOIS</h2>
           <div class="text-center">
             <p>à partir de</p>
@@ -172,7 +174,7 @@
   <div class="content spacer">
     <div class="row flex-md-row-reverse">
       <div class="col-md-6 col-sm-12 text-right">
-        <h1 class="text-right">CONTACT</h1>
+        <h1 class="text-right" id="contact">CONTACT</h1>
         <p>Une visite ? Des informations sur nos disponibilités ?</p>
         <p>Appelez-nous : <strong>06 23 08 68 55</strong></p>
         <div class="flex-lg-row">
